@@ -1,4 +1,5 @@
 import pandas as pd
+import logging
 
 def merge_post_user(user_df:pd.DataFrame,post_df:pd.DataFrame)-> pd.DataFrame:
     merge_df=post_df.merge(user_df,on='user_id',how='left')
